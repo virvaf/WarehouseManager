@@ -9,9 +9,10 @@ namespace WarehouseManager
         private int stock;
         private decimal price;
 
+        public int ProductId { get; private set; }
         public string Name { get; private set; }
         public string Location { get; private set; }
-        public int ProductId { get; private set; }
+        public string? Description { get; private set; }
 
         public int Stock 
         {
@@ -37,6 +38,16 @@ namespace WarehouseManager
                 }
                 price = value;
             }
+        }
+
+        public Product(int productId, string productName, string productLocation, int productStock, decimal productPrice, string? productDescription = null)
+        {
+            ProductId = productId;
+            Name = productName;
+            Location = productLocation;
+            Stock = productStock;
+            Price = productPrice;
+            Description = productDescription;
         }
     }
 }
