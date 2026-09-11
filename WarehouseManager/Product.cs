@@ -11,8 +11,9 @@ namespace WarehouseManager
 
         public int ProductId { get; private set; }
         public string Name { get; private set; }
-        public string Location { get; private set; }
+        public Location Location { get; private set; }
         public string? Description { get; private set; }
+        public DateTime? ExpiryDate { get; private set; }
 
         public int Stock 
         {
@@ -40,7 +41,7 @@ namespace WarehouseManager
             }
         }
 
-        public Product(int productId, string productName, string productLocation, int productStock, decimal productPrice, string? productDescription = null)
+        public Product(int productId, string productName, Location productLocation, int productStock, decimal productPrice, string? productDescription = null, DateTime? expiryDate = null)
         {
             ProductId = productId;
             Name = productName;
@@ -48,6 +49,7 @@ namespace WarehouseManager
             Stock = productStock;
             Price = productPrice;
             Description = productDescription;
+            ExpiryDate = expiryDate;
         }
     }
 }

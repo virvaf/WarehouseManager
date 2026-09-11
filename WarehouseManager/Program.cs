@@ -4,8 +4,9 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Product testProduct = new Product(1, "test1", "A-100", 1, 12.99m);
+        Location A101 = new Location(1, "A-101");
+        Product testProduct = new Product(1, "test1", A101, 1, 12.99m);
 
-        Console.WriteLine(testProduct.Name);
+        Console.WriteLine(testProduct.Location.Code);
     }
 }
