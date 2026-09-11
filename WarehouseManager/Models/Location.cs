@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WarehouseManager
+namespace WarehouseManager.Models
 {
     internal class Location
     {

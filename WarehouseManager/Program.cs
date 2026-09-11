@@ -1,4 +1,6 @@
-﻿namespace WarehouseManager;
+﻿using WarehouseManager.Models;
+
+namespace WarehouseManager;
 
 internal class Program
 {

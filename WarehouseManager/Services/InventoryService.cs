@@ -6,5 +6,6 @@ namespace WarehouseManager.Services
 {
     internal class InventoryService
     {
+
     }
 }
