@@ -25,10 +25,11 @@ namespace WarehouseManager.Models
             }
         }
 
-        public Batch(int batchId, Location location, DateTime? batchExpiry = null)
+        public Batch(int batchId, Location location, int stockCount, DateTime? batchExpiry = null)
         {
             BatchId = batchId;
-            BatchLocation = location; 
+            BatchLocation = location;
+            stock = stockCount;
             ExpiryDate = batchExpiry;
         }
 
