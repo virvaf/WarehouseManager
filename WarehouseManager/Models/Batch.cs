@@ -28,7 +28,7 @@ namespace WarehouseManager.Models
         public Batch(int batchId, Location location, DateTime? batchExpiry = null)
         {
             BatchId = batchId;
-            BatchLocation = location;
+            BatchLocation = location; 
             ExpiryDate = batchExpiry;
         }
 
